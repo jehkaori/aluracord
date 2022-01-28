@@ -73,7 +73,7 @@ export default function PaginaInicial() {
             onSubmit={function (event) {
               event.preventDefault()
               console.log('alguem submenteu');
-              roteamento.push('/chat')
+              roteamento.push(`/chat?username=${username}`)
             }}
             styleSheet={{
               display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
@@ -123,9 +123,9 @@ export default function PaginaInicial() {
               fullWidth
               buttonColors={{
                 contrastColor: appConfig.theme.colors.neutrals["000"],
-                mainColor: appConfig.theme.colors.primary[500],
-                mainColorLight: appConfig.theme.colors.primary[400],
-                mainColorStrong: appConfig.theme.colors.primary[600],
+                mainColor: appConfig.theme.colors.primary[300],
+                mainColorLight: appConfig.theme.colors.primary[900],
+                mainColorStrong: appConfig.theme.colors.primary[200],
               }}
             />
           </Box>
